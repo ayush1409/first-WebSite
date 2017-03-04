@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewreport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+ 	<link rel="stylesheet" type="text/css" href="">
+	<title>IndexPage</title>
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body onload="checkcookie()">
+	<!--Attaching Navigaton Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top" style="margin-bottom: 0px ;" >
+		<div class="container-fluid" style="background-color: #002e4d;margin-bottom: 0px;">
+			<div class="navbar-header navbar-left">
+			<button class=" btn navbar-toggle" data-toggle="collapse" data-target="#mynav">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"> WebSiteName</a>
+			</div>
+			<div class="collapse navbar-collapse" id="mynav">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">home</a></li>
+					<li><a href="#">about</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown">more<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">page1</a></li>
+							<li><a href="#">page2</a></li>
+							<li><a href="#">page3</a></li>
+						</ul>
+					</li>
+					<form class="navbar-form navbar-left">
+						<div class="form-group" style="margin-top: 10px;">
+							<input type="text" placeholder="Search" class="form-control" id="search">
+							<p id="message1"></p>
+						</div>
+						<button class="btn navbar-btn" onclick="validatesearch()">Go</button>
+					</form>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+						<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>SignUp</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="page-header jumbotron nomargin align-center" style="margin-top: 0px;"><img style="max-width: 100%" src="images/Welcome-Assassin-Games-Logo-Wallpaper-Best.jpg" ></div>
+	<!-- attaching articles -->
+	<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6"><p>Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.
+				</p><p>Knowing is not enough; we must apply. Willing is not enough; we must do.
+				</p><p>Accept the challenges so that you can feel the exhilaration of victory.
+				</p></div>
+				<div class="col-md-4 col-sm-6"><p>Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.
+				</p><p>Knowing is not enough; we must apply. Willing is not enough; we must do.
+				</p><p>Accept the challenges so that you can feel the exhilaration of victory.
+				</p></div>
+				<div class="col-md-4 col-sm-6"><p>Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.
+				</p><p>Knowing is not enough; we must apply. Willing is not enough; we must do.
+				</p><p>Accept the challenges so that you can feel the exhilaration of victory.
+				</p></div>
+			</div>
+		</div>
+	<!-- Attaching an accordion -->
+	<div class="panel-group nomargin" id="accordion"></div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Information</a></h4>
+			</div>
+			<div class="panel-collapse collapse in" id="collapse1">
+				<div class="panel-body"><p>This website is created by ayush<br><br>using bootstrap 3</p></div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">About Website</a></h4>
+				<div class="panel-collapse collapse" id="collapse2">
+					<div class="panel-body">This is the first website made by ayush<br><br>with the help of bootstrap<br><br>with reference of w3school.com</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Contact</a></h4>
+				<div class="panel-collapse collapse" id="collapse3">
+					<div class="panel-body"> name : ayush <br><br>mobile no. 9595959595<br><br>email : ayushsingh45556@gmail.com</div>
+				</div>
+			</div>
+		</div> 
+		<p id="cookieinfo"></p>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewreport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>SignUp page</title>
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+	<!--Attaching Navigaton Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top" style="margin-bottom: 0px ;" >
+		<div class="container-fluid" style="background-color: #002e4d;">
+			<div class="navbar-header navbar-left">
+			<button class=" btn navbar-toggle" data-toggle="collapse" data-target="#mynav">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"> WebSiteName</a>
+			</div>
+			<div class="collapse navbar-collapse" id="mynav">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">home</a></li>
+					<li><a href="#">about</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown">more<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">page1</a></li>
+							<li><a href="#">page2</a></li>
+							<li><a href="#">page3</a></li>
+						</ul>
+					</li>
+					<form class="navbar-form navbar-left">
+						<div class="form-group">
+							<input type="text" placeholder="Search" class="form-control" id="search" style="margin-top: 10px;">
+							<p id="message1"></p>
+						</div>
+						<button class="btn navbar-btn" onclick="validatesearch()">Go</button>
+					</form>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Attaching form -->
+	<div class="container" style="margin-top: 50px;">
+		<div class="page-header"><h2>SignUp Here</h2></div>
+		<form class="form-horizontal" method="post" name="myForm">
+			<div class="form-group">
+				<label for="FirstName" class="col-sm-2 control-label">First Name  :</label>
+				<div class="col-sm-10">
+				<input type="text" id="FirstName" class="form-control col-sm-10" placeholder="Enter First Name" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="LastName" class="col-sm-2 control-label">Last Name  :</label>
+				<div class="col-sm-10">
+				<input type="text" id="LastName" class="form-control col-sm-10" placeholder="Enter Last Name" required>
+				</div>
+			</div>
+			<div class="form-group">
+    			<label class="control-label col-sm-2" for="age">age  : </label>
+    			<div class="col-sm-10"> 
+      			<input type="number" class="form-control" id="age" placeholder="Enter age" min="16" max="22" required>
+    			</div>
+    			<p id="message2"></p>
+  			</div>
+			<div class="form-group">
+   				<label class="control-label col-sm-2" for="email">Email  :</label>
+   				<div class="col-sm-10">
+      			<input type="email" class="form-control" id="email" placeholder="Enter email" required>
+    			</div>
+  			</div>
+  			<div class="form-group">
+    			<label class="control-label col-sm-2" for="pwd">Password  :</label>
+    			<div class="col-sm-10"> 
+      			<input type="password" class="form-control" id="pwd" placeholder="Enter password" required>
+    			</div>
+  			</div>
+  			<div class="form-group"> 
+    			<div class="col-sm-offset-2 col-sm-10">
+      			<button type="submit" class="btn btn-default" onclick="return info() && validatingform()">Submit</button>
+    			</div>
+  			</div>
+  		</form>
+  		<div class="container col-sm-offset-2">
+  		<p id="info"></p>
+  		</div>
+  		<!-- an object named as "ayush" is created in external javascript-->
+  		<div class="container col-sm-offset-2">
+  			<p id="demo"><script type="text/javascript">document.getElementById("demo").innerHTML = "Already signed in by " + ayush.fullname() ;</script></p>
+  		</div>
+	</div>
+</body>
+</html>
